@@ -6,5 +6,20 @@ block content
     div(class = 'container-fluid')
       div(class = 'row')
         each item,index in results 
-          div(class="col-sm-2") vegetableName : #{item["vegetableName"]} <br> vegetableCost : #{item["vegetableCost"]} <br> vegetableColour: #{item["vegetableColour"]}
-          
+          div(class="col-sm-2",onClick=`buy(${index})`) vegetableName : #{item["vegetableName"]} <br> vegetableCost : #{item["vegetableCost"]} <br> vegetableColour: #{item["vegetableColour"]}
+          script.
+           function buy(val){
+             alert(`You Purchased item ${val}`)
+           } 
+
+
+
+
+
+
+
+
+
+
+
+
