@@ -2,6 +2,6 @@
 webapplications
 https://f2wb69eladandi.onrender.com/
 
-class : Vegetables
+class : vegetables
 
 Attributes : vegetableName(String), vegetableCost(number), vegetableColour(String)
